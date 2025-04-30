@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>股票监控系统</title>
+</head>
+<body>
+    <h1>股票监控系统</h1>
+    <div class="form">
+        <input id="stockCode" type="text" placeholder="股票代码">
+        <input id="timeRange" type="text" placeholder="监控时间">
+        <select id="action">
+            <option value="买入">买入</option>
+            <option value="卖出">卖出</option>
+        </select>
+        <input id="price" type="number" placeholder="股票价格">
+        <button id="addOrder">添加任务</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>委托单ID</th>
+                <th>股票代码</th>
+                <th>操作</th>
+                <th>价格</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody id="orderList"></tbody>
+    </table>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
